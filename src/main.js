@@ -1,0 +1,12 @@
+import header from "./button";
+import "./style";
+import homePage from "./homegape";
+// import cotanct from "./contact";
+import contact from "./contact";
+import menu from "./menu";
+header();
+homePage();
+contact();
+document.querySelector("#home").addEventListener("click", homePage.bind());
+document.querySelector("#menu").addEventListener("click", menu.bind());
+document.querySelector("#contact").addEventListener("click", contact.bind());
